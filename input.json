@@ -1,0 +1,1045 @@
+{
+    "wgs_pip.resources": {
+        "cnvnator_mops_combine": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "variant_mt": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "align_sort": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "loh": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "mops": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "bqsr_check": {
+            "cpu": 1,
+            "mem": 4.0
+        },
+        "all_chr_merge_dup": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "unmap_merge": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "batchCNV": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "qc_collect": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "align": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "concat_vcf_2": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "vqsr_indel": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "merge_bam_check": {
+            "cpu": 1,
+            "mem": 4.0
+        },
+        "batchCNV_anno": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "exon_depth": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "filter_split": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "concat_vcf": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "lumpy_chr_disco": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "variant_annotation": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "cnvnator": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "qc_bed_split": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "bam_chr_part_split": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "sma": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "report": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "bqsr": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "final_lumpy": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "un_rand_merge": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "lumpy_anno": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "variant_hc": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "concat_snp_indel": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "batchCNV_breakpoint": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "intrauterine_infection": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "str_hunter": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "triploid": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "lumpy_chr_split": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "bam_merge_dup": {
+            "cpu": 2,
+            "mem": 4.0
+        },
+        "vqsr_snp": {
+            "cpu": 2,
+            "mem": 4.0
+        }
+    },
+    "wgs_pip.noM_chrs": [
+        "chr1",
+        "chr2",
+        "chr3",
+        "chr4",
+        "chr5",
+        "chr6",
+        "chr7",
+        "chr8",
+        "chr9",
+        "chr10",
+        "chr11",
+        "chr12",
+        "chr13",
+        "chr14",
+        "chr15",
+        "chr16",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr20",
+        "chr21",
+        "chr22",
+        "chrX",
+        "chrY"
+    ],
+    "wgs_pip.cnvloh_isrun": false,
+    "wgs_pip.tools_dir": "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin",
+    "wgs_pip.sex": "female",
+    "wgs_pip.go_path": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/GO",
+    "wgs_pip.conda_triploid_env": "/zfsyt1/B2C_RD_P2/USER/liufengxia/sources/anaconda3",
+    "wgs_pip.indels_sites_vcf": "/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/software/local/bin/bundle/Mills_and_1000G_gold_standard.indels.hg19.sites.vcf",
+    "wgs_pip.project_path": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/wgs_server_mode_v2",
+    "wgs_pip.conda_lumpy_env": "/zfsyt1/B2C_RD_P2/USER/liufengxia/sources/anaconda3",
+    "wgs_pip.dbsnp_vcf": "/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/software/local/bin/bundle/dbsnp_138.hg19.vcf.gz",
+    "wgs_pip.high_confidence_sites_vcf": "/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/software/local/bin/bundle/1000G_phase1.snps.high_confidence.hg19.sites.vcf.gz",
+    "wgs_pip.cnvnator_path": "/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/software/CNVnator/cnvnator",
+    "wgs_pip.omni_sites_vcf": "/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/software/local/bin/bundle/1000G_omni2.5.hg19.sites.vcf.gz",
+    "wgs_pip.ref_fa": "/zfsyt1/B2C_RD_P2/USER/wangyaoshen/pipeline/cWES/WESIM/pipeline/hg19/hg19_chM_male_mask.fa",
+    "wgs_pip.database_path": "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database",
+    "wgs_pip.chr_parts": [
+        {
+            "left": "chrX",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrX.part15.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrX.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrX.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrX.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrX.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrX.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrX.part5.bed"
+            ]
+        },
+        {
+            "left": "chr17",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr17.part8.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr17.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr17.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr17.part3.bed"
+            ]
+        },
+        {
+            "left": "chr8",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr8.part23.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr8.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr8.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr8.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr8.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr8.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr8.part3.bed"
+            ]
+        },
+        {
+            "left": "chr9",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr9.part20.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr9.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr9.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr9.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr9.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr9.part3.bed"
+            ]
+        },
+        {
+            "left": "chr3",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part27.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part29.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part31.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part28.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part30.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part32.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr3.part16.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr3.part2.bed"
+            ]
+        },
+        {
+            "left": "chr11",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr11.part21.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr11.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr11.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr11.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr11.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr11.part3.bed"
+            ]
+        },
+        {
+            "left": "chr2",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part32.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part35.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part40.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part34.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part33.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part39.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part30.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part37.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part28.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part36.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part31.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part38.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part29.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part27.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr2.part15.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr2.part2.bed"
+            ]
+        },
+        {
+            "left": "chr12",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr12.part16.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr12.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr12.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr12.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr12.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr12.part3.bed"
+            ]
+        },
+        {
+            "left": "chr1",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part28.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part37.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part30.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part29.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part27.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part31.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part36.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part35.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part32.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part33.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part34.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr1.part3.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr1.part2.bed"
+            ]
+        },
+        {
+            "left": "chr16",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr16.part6.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr16.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr16.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr16.part3.bed"
+            ]
+        },
+        {
+            "left": "chr4",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part31.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part27.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part29.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part30.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part28.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr4.part4.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr4.part5.bed"
+            ]
+        },
+        {
+            "left": "chr10",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr10.part22.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr10.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr10.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr10.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr10.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr10.part3.bed"
+            ]
+        },
+        {
+            "left": "chr18",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr18.part12.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr18.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr18.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr18.part2.bed"
+            ]
+        },
+        {
+            "left": "chr15",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr15.part8.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr15.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr15.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr15.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr15.part4.bed"
+            ]
+        },
+        {
+            "left": "chr13",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr13.part15.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr13.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr13.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr13.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr13.part3.bed"
+            ]
+        },
+        {
+            "left": "chr14",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr14.part6.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr14.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr14.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr14.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr14.part4.bed"
+            ]
+        },
+        {
+            "left": "chr20",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr20.part4.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr20.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr20.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr20.part1.bed"
+            ]
+        },
+        {
+            "left": "chr7",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr7.part13.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr7.part5.bed"
+            ]
+        },
+        {
+            "left": "chr6",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part28.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part27.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr6.part10.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr6.part5.bed"
+            ]
+        },
+        {
+            "left": "chr19",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr19.part9.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr19.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr19.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr19.part2.bed"
+            ]
+        },
+        {
+            "left": "chr5",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part16.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part11.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part18.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part24.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part23.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part9.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part22.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part25.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part19.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part10.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part17.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part26.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part21.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part28.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part14.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part13.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part30.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part12.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part15.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part29.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part20.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr5.part27.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part8.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part7.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part4.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr5.part5.bed"
+            ]
+        },
+        {
+            "left": "chr22",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr22.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr22.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr22.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr22.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr22.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr22.part4.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr22.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr22.part1.bed"
+            ]
+        },
+        {
+            "left": "chr21",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr21.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr21.part6.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr21.part5.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr21.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr21.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chr21.part4.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr21.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chr21.part1.bed"
+            ]
+        },
+        {
+            "left": "chrY",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrY.part1.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrY.part2.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrY.part3.bed",
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrY.part4.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrY.part1.bed"
+            ]
+        },
+        {
+            "left": "chrM_NC_012920.1",
+            "right": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_6M_delN/chrM_NC_012920.1.part1.bed"
+            ],
+            "mid": [
+                "/jdfsyt1/B2C_RD_P2/USR/yansaiying/script/WGS_sjm_git_v3/wgs_clinical/bin/wgs_database/WGS_BED_SPLIT_24M_delN/chrM_NC_012920.1.part1.bed"
+            ]
+        }
+    ],
+    "wgs_pip.reads_info": [
+        {
+            "left": "F15-1-D7",
+            "right": [
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L01_89_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L01_89_2.fq.gz"
+                },
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L02_89_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L02_89_2.fq.gz"
+                },
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L03_89_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L03_89_2.fq.gz"
+                },
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L04_89_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L04_89_2.fq.gz"
+                }
+            ]
+        },
+        {
+            "left": "F15-10-D7",
+            "right": [
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L01_95_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L01_95_2.fq.gz"
+                },
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L02_95_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L02_95_2.fq.gz"
+                },
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L03_95_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L03_95_2.fq.gz"
+                },
+                {
+                    "left": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L04_95_1.fq.gz",
+                    "right": "/zfsyt1/B2C_RD_P2/USER/fuxiangke/raw_data/V300112631_L04_95_2.fq.gz"
+                }
+            ]
+        }
+    ],
+    "wgs_pip.chrs": [
+        "chr1",
+        "chr2",
+        "chr3",
+        "chr4",
+        "chr5",
+        "chr6",
+        "chr7",
+        "chr8",
+        "chr9",
+        "chr10",
+        "chr11",
+        "chr12",
+        "chr13",
+        "chr14",
+        "chr15",
+        "chr16",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr20",
+        "chr21",
+        "chr22",
+        "chrX",
+        "chrY",
+        "chrM_NC_012920.1"
+    ]
+}

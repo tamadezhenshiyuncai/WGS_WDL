@@ -1,0 +1,16 @@
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_49_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_50_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_51_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_52_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_53_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_54_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_55_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L01_56_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_49_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_50_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_51_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_52_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_53_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_54_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_55_1.fq.gz	male	father	100
+depth40_rep1	/zfsyt1/B2C_RD_P2/USER/yansaiying/script/WGS_pipeline/FQ_test/rep1/V300033298_L02_56_1.fq.gz	male	father	100
