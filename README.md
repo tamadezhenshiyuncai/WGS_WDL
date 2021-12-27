@@ -15,7 +15,7 @@
 
     7. 执行如下脚本，将任务往服务节点上推送：
     
-    ```/share/nastj10/B2C_RD_P2/USER/fuxiangke/software/Miniconda3/envs/cromwell/bin/cromwell submit \
+```/share/nastj10/B2C_RD_P2/USER/fuxiangke/software/Miniconda3/envs/cromwell/bin/cromwell submit \
     -i /share/nastj4/B2C_RD_P2/USR/fuxiangke/wgs_server_test/new_input.json \
     -o /share/nastj4/B2C_RD_P2/USR/fuxiangke/wgs_server_test/options.json \
     -h http://192.168.136.114:5002 \
