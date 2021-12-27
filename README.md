@@ -18,5 +18,5 @@
 >>    -o /share/nastj4/B2C_RD_P2/USR/fuxiangke/wgs_server_test/options.json \
 >>    -h http://192.168.136.114:5002 \
 >>    -p /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_tasks.zip \
->>    /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_workflow.wdl`
+>>    /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_workflow.wdl
 
