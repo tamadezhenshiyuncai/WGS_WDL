@@ -12,10 +12,10 @@
     6. 将cromwell 服务脚本挂在后台： 
         nohup /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/Miniconda3/envs/cromwell/bin/cromwell server -Dconfig.file=/share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/SGE_SERVER.conf &
     7. 执行如下脚本，将任务往服务节点上推送：
-```/share/nastj10/B2C_RD_P2/USER/fuxiangke/software/Miniconda3/envs/cromwell/bin/cromwell submit \
+`/share/nastj10/B2C_RD_P2/USER/fuxiangke/software/Miniconda3/envs/cromwell/bin/cromwell submit \
     -i /share/nastj4/B2C_RD_P2/USR/fuxiangke/wgs_server_test/new_input.json \
     -o /share/nastj4/B2C_RD_P2/USR/fuxiangke/wgs_server_test/options.json \
     -h http://192.168.136.114:5002 \
     -p /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_tasks.zip \
     /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_workflow.wdl
-```
+`
