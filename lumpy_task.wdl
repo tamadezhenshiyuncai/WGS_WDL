@@ -119,6 +119,9 @@ task lumpy_anno {
     }
     command <<<
         export PATH="~{tools_dir}/tools:$PATH"
+        tmpDir="~{batch_path}/CNV/lumpy/tmp"  #这个地方不替换掉会导致下面脚本Manager()那一行报错
+        export _JAVA_OPTIONS=-Djava.io.tmpdir="$tmpDir"
+        export TMPDIR="$tmpDir"
         python2 ~{tools_dir}/CNV/lumpy/lumpy_annot/lumpy2gt_anno.py \
             -v ~{final_lumpy_vcf} \
             -o ~{batch_path}/CNV/lumpy/~{batch_number}.lumpy_anno.xlsx \
