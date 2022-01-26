@@ -23,3 +23,5 @@ nohup /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/Miniconda3/envs/cromwell/
     -p /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_tasks.zip \
     /share/nastj10/B2C_RD_P2/USER/fuxiangke/software/pipline_wgs/WGS_WDL_SGE/wgs_workflow.wdl
 ```
+## 流程图
+![wgs_pipeline](https://gitlab.genomics.cn/fuxiangke/WGS_WDL/-/raw/main/wgs.pipline.png)
