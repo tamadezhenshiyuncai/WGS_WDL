@@ -7,6 +7,7 @@
         CREATE DATABASE IF NOT EXISTS cromwell default charset utf8mb4 COLLATE utf8mb4_unicode_ci;
         CREATE USER 'cromwell'@'localhost' IDENTIFIED BY 'cromwell';
         GRANT all privileges ON cromwell.* TO 'cromwell'@'localhost';
+        (测试发现mariaDB与cromwell不能特别好的兼容，mysql更合适，后面文档会追加如何用singularity容器启动mysql数据库服务)
     4. womtool 检查wdl流程的语法
     5. 语法没有问题后，用womtool 生成input.json模板，并用实际数据配置，真正应用到生产时，input.json将会有专门的脚本生成
     6. 将cromwell 服务脚本挂在后台：
