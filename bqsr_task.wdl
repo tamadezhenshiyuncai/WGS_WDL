@@ -37,6 +37,7 @@ task bqsr{
     runtime {
         cpu: cpu
         memory: "~{mem}GB"
+        maxRetries: 3
     }
     output {
         File bqsr_table = "~{batch_path}/bam_chr/script/~{chr}.bqsr.table"
@@ -90,6 +91,7 @@ task all_chr_merge_dup{
     runtime {
         cpu: cpu
         memory: "~{mem}GB"
+        maxRetries: 3
     }
     output {
         File merge_bam = "~{batch_path}/bam_chr/~{batch_number}.final.merge.bam"
@@ -164,8 +166,7 @@ task qc_bed_split {
         export PATH="~{tools_dir}/tools:$PATH"
         mkdir -p ~{batch_path}/QC/QC_BED_SPLIT/~{chr}/~{part_num}
         bamdst -p ~{bed_split_path} -o ~{batch_path}/QC/QC_BED_SPLIT/~{chr}/~{part_num} \
-        ~{split_bam} || \
-        sleep 180s
+        ~{split_bam} || true
     >>>
     runtime {
         cpu: cpu

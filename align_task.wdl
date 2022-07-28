@@ -28,6 +28,7 @@ task align {
     runtime {
         cpu: cpu
         memory: "~{mem}GB"
+        maxRetries: 3
     }
     output {
         File out_bam = "~{project_path}/~{batch_number}/align/~{sample_name}/~{piece}/~{sample_name}_~{piece}.align.bam"
@@ -59,6 +60,7 @@ task align_sort {
     runtime {
         cpu: cpu
         memory: "~{mem}GB"
+        maxRetries: 3
     }
     output {
         File sort_bam = "~{batch_path}/align/~{sample_name}/~{piece}/~{sample_name}_~{piece}.align.sort.bam"
@@ -154,6 +156,7 @@ task bam_merge_dup{
     runtime {
         cpu: cpu
         memory: "~{mem}GB"
+        maxRetries: 3 
     }
     output {
         File raw_bam = "~{batch_path}/bam_chr/~{chr}.raw.bam"

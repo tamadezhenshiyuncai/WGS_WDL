@@ -19,6 +19,10 @@ task triploid {
             ~{batch_number} \
             ~{concat_vcf} \
             ~{batch_path}/CNV/triploid/~{batch_number}
+         ~{conda_path}/envs/triploid/bin/python ~{tools_dir}/triploid_merge.py \
+            ~{batch_path}/CNV/triploid/~{batch_number}.xlsx \
+            ~{batch_number} \
+            ~{batch_path}/CNV/triploid
     >>>
     runtime {
         cpu: cpu

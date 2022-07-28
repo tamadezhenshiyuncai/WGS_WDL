@@ -128,7 +128,7 @@ task lumpy_anno {
             -b ~{batch_path}/bam_chr/~{batch_number}.final.merge.bam \
             -d ~{batch_path}/CNV/lumpy/script/tmp \
             -n 500 -s ~{batch_number} \
-            --config ~{tools_dir}/wgs_yantian.yaml
+            --config ~{tools_dir}/wgs.yaml
     >>>
     runtime {
         cpu: cpu
