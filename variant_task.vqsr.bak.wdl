@@ -98,7 +98,6 @@ task variant_mt {
     runtime {
         cpu: cpu
         memory: "~{mem}GB"
-        maxRetries: 3
     }
     output {
         String variant_path = "~{batch_path}/variant"
@@ -137,9 +136,9 @@ task vqsr_snp {
             --resource omni,known=false,training=true,truth=false,prior=12.0:~{tools_dir}/tools/bundle/1000G_omni2.5.hg19.sites.vcf.gz \
             --resource 1000G,known=false,training=true,truth=false,prior=10.0:~{tools_dir}/tools/bundle/1000G_phase1.snps.high_confidence.hg19.sites.vcf.gz \
             --resource dbsnp,known=true,training=false,truth=false,prior=2.0:~{tools_dir}/tools/bundle/dbsnp_138.hg19.vcf.gz \
-            -an DP -an QD -an MQ -an MQRankSum -an ReadPosRankSum -an FS -an SOR \
+            -an DP -an QD -an ReadPosRankSum -an FS -an SOR \
             -mode SNP \
-            --max-gaussians 4 \
+            --max-gaussians 3 \
             -O ~{batch_path}/variant/~{batch_number}.wgs.snp_recal.vcf \
             --tranches-file ~{batch_path}/variant/~{batch_number}.wgs.snp_tranches.vcf && \
         java -jar ~{tools_dir}/tools/gatk-package-4.0.11.0-local.jar \

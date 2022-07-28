@@ -1,3 +1,4 @@
+
 version development
 
 struct Resource {
@@ -42,6 +43,7 @@ struct Modules {
     Resource vqsr_indel
     Resource concat_snp_indel
     Resource concat_vcf_2
+    Resource contamination
     Resource variant_annotation
     Resource exon_depth
     Resource sma

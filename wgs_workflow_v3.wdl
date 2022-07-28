@@ -37,6 +37,7 @@ workflow wgs_pip {
         String cnvnator_path
         String conda_lumpy_env
         String conda_triploid_env
+        String conda_python3_env
         Boolean cnvloh_isrun
         String database_path
         String go_path
@@ -67,6 +68,7 @@ workflow wgs_pip {
     Resource resource_vqsr_indel = resources.vqsr_indel
     Resource resource_concat_snp_indel = resources.concat_snp_indel
     Resource resource_concat_vcf_2 = resources.concat_vcf_2
+    Resource resource_contamination = resources.contamination  #new
     Resource resource_variant_annotation = resources.variant_annotation
     Resource resource_exon_depth = resources.exon_depth
     Resource resource_sma = resources.sma
@@ -233,9 +235,7 @@ workflow wgs_pip {
                 batch_path = batch_path,
                 batch_number = batch_number,
                 batch_part_vcfs = split_vcfs_flatten,
-                batch_part_gvcfs = split_gvcfs_flatten,
                 batch_part_vcf_tbis = split_vcf_tbis_flatten,
-                batch_part_gvcf_tbis = split_gvcf_tbis_flatten,
                 cpu = resource_concat_vcf.cpu,
                 mem = resource_concat_vcf.mem
         }
@@ -245,7 +245,6 @@ workflow wgs_pip {
                 batch_path = batch_path,
                 batch_number = batch_number,
                 concat_vcf = concat_vcf.concat_vcf,
-                concat_gvcf = concat_vcf.concat_gvcf,
                 cpu = resource_variant_mt.cpu,
                 mem = resource_variant_mt.mem
         }
@@ -258,9 +257,7 @@ workflow wgs_pip {
                 concat_vcf = concat_vcf.concat_vcf,
                 concat_vcf_tbi = concat_vcf.concat_vcf_tbi,
                 cpu = resource_vqsr_snp.cpu,
-                #cpu = 2,
                 mem = resource_vqsr_snp.mem
-                #mem = 1000
         }
         call variant.vqsr_indel as vqsr_indel {
             input:
@@ -290,10 +287,23 @@ workflow wgs_pip {
                 batch_path = batch_path,
                 batch_number = batch_number,
                 batch_part_vcfs_list = concat_vcf.batch_part_vcfs_list,
-                batch_part_gvcfs_list = concat_vcf.batch_part_gvcfs_list,
+                batch_part_gvcfs_list = write_lines(split_gvcfs_flatten),
+		concat_filter_vcf = concat_snp_indel.concat_filter_vcf,
                 cpu = resource_concat_vcf_2.cpu,
                 mem = resource_concat_vcf_2.mem
         }
+
+        call variant.contamination as contamination {
+            input:
+                tools_dir = tools_dir,
+                batch_path = batch_path,
+                batch_number = batch_number,
+                concat_vcf = concat_vcf_2.concat_vcf,
+                concat_vcf_tbi = concat_vcf_2.concat_vcf_tbi,
+                cpu = resource_contamination.cpu,
+                mem = resource_contamination.mem
+        }
+
         call advance.triploid as triploid {
             input:
                 tools_dir = tools_dir,
@@ -406,21 +416,22 @@ workflow wgs_pip {
                 bam_list = bam_files,
                 bai_list = bai_files,
                 batch_path = batch_path,
+                ref_fa = ref_fa,
                 cpu = resource_sma.cpu,
                 mem = resource_sma.mem
-        } 
-        scatter (chr in chrs) {
-            call variant.cnvnator as cnvnator {
-                input:
-                    tools_dir = tools_dir,
-                    bqsr_check_files = bqsr_check_files,
-                    cnvnator_path = cnvnator_path,
-                    chr = chr,
-                    batch_path = batch_path,
-                    cpu = resource_cnvnator.cpu,
-                    mem = resource_cnvnator.mem
-            }
         }
+
+        call variant.cnvnator as cnvnator {
+            input:
+                tools_dir = tools_dir,
+                bqsr_check_files = bqsr_check_files,
+                cnvnator_path = cnvnator_path,
+                batch_path = batch_path,
+                batch_number = batch_number,
+                cpu = resource_cnvnator.cpu,
+                mem = resource_cnvnator.mem
+        }
+
         scatter (chr in noM_chrs) {
             call variant.mops as mops {
                 input:
@@ -434,7 +445,7 @@ workflow wgs_pip {
                     mem = resource_mops.mem
             }
         }
-        Array[File] all_chr_cnvs = cnvnator.chr_cnv
+        File all_chr_cnvs = cnvnator.chr_cnv
         Array[File] all_cnmops_cnvs = mops.cnmops_cnv
         call variant.cnvnator_mops_combine as cnvnator_mops_combine {
             input:
@@ -461,11 +472,15 @@ workflow wgs_pip {
                 anno_xls = batchCNV_anno.anno_xls,
                 anno_result_xlsx = lumpy_anno.anno_result_xlsx,
                 anno_xlsx = variant_mt.anno_xlsx,
+                contamination_xls = contamination.contamination_xls,
+                nator_mops_xlsx = cnvnator_mops_combine.nator_mops_xlsx,
                 database_path = database_path,
                 go_path = go_path,
                 tools_dir = tools_dir,
                 batch_path = batch_path,
                 batch_number = batch_number,
+                project_path = project_path,
+                conda_path = conda_python3_env,
                 cpu = resource_report.cpu,
                 mem = resource_report.mem
         }
