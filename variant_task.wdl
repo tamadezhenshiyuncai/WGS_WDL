@@ -502,8 +502,8 @@ task sma {
 task cnvnator {
     input {
         String tools_dir
-        Array[File] bqsr_check_files  #来自task bqsr_check
         String cnvnator_path
+        File merge_bam
         #String chr
         String batch_path
         String batch_number
@@ -520,11 +520,11 @@ task cnvnator {
         export PATH=$ROOTSYS/bin:$PATH
         export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
         export MANPATH=$MANPATH:$ROOTSYS/man/man1
-     
+
         mkdir -p ~{batch_path}/CNV/cnvnator
         sh ~{tools_dir}/CNV/CNVnator/script/cnvnator_all_chr.sh \
             ~{batch_path}/CNV/cnvnator/chr_all.root \
-            ~{batch_path}/bam_chr/~{batch_number}.final.merge.bam \
+            ~{merge_bam} \
             ~{tools_dir}/wgs_database/CNV_database/aln_db/hg19/chr \
             ~{batch_path}/CNV/cnvnator/chr_all.CNV \
             1000 ~{tools_dir}/tools/cnvnator

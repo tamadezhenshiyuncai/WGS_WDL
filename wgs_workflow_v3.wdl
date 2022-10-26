@@ -424,8 +424,8 @@ workflow wgs_pip {
         call variant.cnvnator as cnvnator {
             input:
                 tools_dir = tools_dir,
-                bqsr_check_files = bqsr_check_files,
                 cnvnator_path = cnvnator_path,
+                merge_bam = all_chr_merge_dup.merge_bam,
                 batch_path = batch_path,
                 batch_number = batch_number,
                 cpu = resource_cnvnator.cpu,
