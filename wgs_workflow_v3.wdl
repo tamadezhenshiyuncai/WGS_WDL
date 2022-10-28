@@ -157,9 +157,16 @@ workflow wgs_pip {
         ##跑vcf注释部分
         ##flatten###这一步的结果只有task report调用到
         Array[Pair[String,File]] vcf_pairs_arr = flatten(split_chr_jobs.chr_vcf_pairs)
+        ######Modify by fuxiangke#####
+        #scatter(each_pair in vcf_pairs_arr) {
+        #    String part_vcf = sub(each_pair.right, "\\.vcf\\.gz$", ".vqsr.vcf.gz")
+        #    Pair[String, String] vqsr_vcf_pair = (each_pair.left, part_vcf)
+        #} 
+        Array[Pair[String, File]] vqsr_vcf_pairs_arr = as_pairs(concat_snp_indel.vqsr_vcf_map)
+        #####2022/10/27###############
         call variant_anno_workflow.var_anno_jobs as var_anno_jobs {
             input:
-                chr_vcf_pairs = vcf_pairs_arr,
+                chr_vcf_pairs = vqsr_vcf_pairs_arr,
                 tools_dir = tools_dir,
                 batch_path = batch_path,
                 sex_txt = qc_collect.sex_txt,
@@ -181,6 +188,12 @@ workflow wgs_pip {
         Array[String] bam_chr_arr = split_chr_jobs.bam_chr_arr
         Array[String] one_bam_chr = [bam_chr_arr[0]]
         Array[File] inhouse_wgs_files = var_anno_jobs.inhouse_wgs_arr
+        ########Modify by fuxiangke########
+        #scatter(part_vcf in split_vcfs_flatten) {
+        #    String part_vqsr_vcf = sub(part_vcf, "\\.vcf\\.gz$", ".vqsr.vcf.gz")
+        #}
+        #Array[String] split_part_vqsr_vcfs = part_vqsr_vcf
+        ######2022/10/27#####
         ##batchCNV
         call batchcnv.batchCNV as batchCNV {
             input:
@@ -280,13 +293,12 @@ workflow wgs_pip {
                 cpu = resource_concat_snp_indel.cpu,
                 mem = resource_concat_snp_indel.mem
         }
-
         call variant.concat_vcf_2 as concat_vcf_2 {
             input:
                 tools_dir = tools_dir,
                 batch_path = batch_path,
                 batch_number = batch_number,
-                batch_part_vcfs_list = concat_vcf.batch_part_vcfs_list,
+                batch_part_vcfs_list2 = concat_snp_indel.split_part_vqsr_vcfs,
                 batch_part_gvcfs_list = write_lines(split_gvcfs_flatten),
 		concat_filter_vcf = concat_snp_indel.concat_filter_vcf,
                 cpu = resource_concat_vcf_2.cpu,
@@ -425,7 +437,7 @@ workflow wgs_pip {
             input:
                 tools_dir = tools_dir,
                 cnvnator_path = cnvnator_path,
-                merge_bam = all_chr_merge_dup.merge_bam,
+                merge_bam = all_chr_merge_dup.merge_bam, 
                 batch_path = batch_path,
                 batch_number = batch_number,
                 cpu = resource_cnvnator.cpu,

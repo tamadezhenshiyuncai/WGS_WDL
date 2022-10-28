@@ -15,7 +15,7 @@ workflow var_anno_jobs {
     scatter (each_pair in chr_vcf_pairs) {
         String chr = each_pair.left
         String split_vcf = each_pair.right
-        String vcf_base = basename(split_vcf,".vcf.gz")
+        String vcf_base = basename(split_vcf,".vqsr.vcf.gz")
         String part_num = sub(vcf_base,"chr.*_","")
         call variant.variant_annotation as variant_annotation {
             input:

@@ -248,12 +248,26 @@ task concat_snp_indel {
             MergeVcfs \
             -I ~{snp_sort_vcf} \
             -I ~{indel_sort_vcf} \
-            -O ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz && \
-        tabix -p vcf -f ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz && \
+            -O ~{batch_path}/variant/~{batch_number}.wgs.vqsr.vcf.gz && \
+        tabix -p vcf -f ~{batch_path}/variant/~{batch_number}.wgs.vqsr.vcf.gz && \
         python3 ~{tools_dir}/wgs_vcf_add_vqsr.py \
-            --vcffilter ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz \
+            --vcffilter ~{batch_path}/variant/~{batch_number}.wgs.vqsr.vcf.gz \
             --beddir ~{tools_dir}/wgs_database/WGS_BED_SPLIT_24M_delN \
             --config ~{tools_dir}/wgs_yantian.yaml
+        if [ -f "~{batch_path}/variant/all_chr_parts.tsv" ];then
+            rm -f ~{batch_path}/variant/all_chr_parts.tsv
+        fi
+        if [ -f "~{batch_path}/variant/all_chr_vqsr_vcf.tsv" ];then
+            rm -f ~{batch_path}/variant/all_chr_vqsr_vcf.tsv
+        fi
+        for chr in `ls -df ~{batch_path}/variant/chr*`;do
+            chrom=${chr##*/}
+            for part in `ls -df $chr/part*`;do
+                n_part=${part##*/}
+                echo -e "$chrom\t$part/${chrom}_${n_part}.vqsr.vcf.gz" >> ~{batch_path}/variant/all_chr_parts.tsv
+                echo -e "$part/${chrom}_${n_part}.vqsr.vcf.gz" >> ~{batch_path}/variant/all_chr_vqsr_vcf.tsv 
+            done
+        done
     >>>
     runtime {
         cpu: cpu
@@ -261,7 +275,10 @@ task concat_snp_indel {
         maxRetries: 3
     }
     output {
-        File concat_filter_vcf = "~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz"
+        File concat_filter_vcf = "~{batch_path}/variant/~{batch_number}.wgs.vqsr.vcf.gz"
+        #Array[File] split_part_vqsr_vcfs = glob("~{batch_path}/variant/chr*/part*/*.vqsr.vcf.gz*")
+        File split_part_vqsr_vcfs = "~{batch_path}/variant/all_chr_vqsr_vcf.tsv"
+        Map[String, File] vqsr_vcf_map = read_map("~{batch_path}/variant/all_chr_parts.tsv")
     }
 }
 
@@ -270,7 +287,7 @@ task concat_vcf_2 {
         String tools_dir
         String batch_path
         String batch_number
-        File batch_part_vcfs_list
+        File batch_part_vcfs_list2
         File batch_part_gvcfs_list
 	File concat_filter_vcf
         Int cpu
@@ -279,15 +296,15 @@ task concat_vcf_2 {
     command <<<
         export PATH="~{tools_dir}/tools:$PATH"
         bcftools concat -a -D -q 30 -O z \
-            -o ~{batch_path}/variant/~{batch_number}.wgs.vcf.gz \
-            -f ~{batch_part_vcfs_list} && \
-        tabix -p vcf -f ~{batch_path}/variant/~{batch_number}.wgs.vcf.gz && \
+            -o ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz \
+            -f ~{batch_part_vcfs_list2} && \
+        tabix -p vcf -f ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz && \
         bcftools concat -a -D -q 30 -O z \
             -o ~{batch_path}/variant/~{batch_number}.wgs.gvcf.gz \
-            -f ~{batch_part_gvcfs_list} && \
-        rm -rf ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz.tbi && \
-        mv ~{batch_path}/variant/~{batch_number}.wgs.vcf.gz ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz && \
-        mv ~{batch_path}/variant/~{batch_number}.wgs.vcf.gz.tbi ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz.tbi
+            -f ~{batch_part_gvcfs_list}
+      #  rm -rf ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz.tbi && \
+      #  mv ~{batch_path}/variant/~{batch_number}.wgs.vcf.gz ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz && \
+      #  mv ~{batch_path}/variant/~{batch_number}.wgs.vcf.gz.tbi ~{batch_path}/variant/~{batch_number}.wgs.filter.vcf.gz.tbi
     >>>
     runtime {
         cpu: cpu
@@ -311,6 +328,7 @@ task contamination {
         Float? mem
     }
     command<<<
+        set +u
         export PATH="~{tools_dir}/tools:$PATH"
         export PYTHONPATH=~{tools_dir}/CNV/bio_toolkit:$PYTHONPATH
         ky_anno_python3 \
@@ -340,7 +358,7 @@ task variant_annotation {
         String chr
         File sex_txt #来自 task qc_collect
         String part_num
-        File split_vcf  #来自 task variant_hc
+        File split_vcf  #  来自 task concat_snp_indel
         #File qc_result_txt #来自 task qc_collect 并没在这个task中使用
         #File concat_filter_vcf #来自 task concat_snp_indel 并没在这个task中使用
         Int cpu
@@ -503,8 +521,8 @@ task cnvnator {
     input {
         String tools_dir
         String cnvnator_path
-        File merge_bam
         #String chr
+        File merge_bam  #来自task all_chr_merge_dup
         String batch_path
         String batch_number
         Int cpu
@@ -520,7 +538,7 @@ task cnvnator {
         export PATH=$ROOTSYS/bin:$PATH
         export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
         export MANPATH=$MANPATH:$ROOTSYS/man/man1
-
+     
         mkdir -p ~{batch_path}/CNV/cnvnator
         sh ~{tools_dir}/CNV/CNVnator/script/cnvnator_all_chr.sh \
             ~{batch_path}/CNV/cnvnator/chr_all.root \
